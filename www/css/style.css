@@ -1,4 +1,7 @@
 /**/
+  body{
+      background-color: greenyellow;
+  }
     #minuteStr {
         color: #ff0000;
         font-size: 20px;
