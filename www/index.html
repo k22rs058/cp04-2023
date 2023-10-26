@@ -39,7 +39,8 @@
             btnCClick(e);
         });
         $('#btnD').click(function(e) {
-            btnAClick(e);
+            btnDClick(e);
+
         });
         init();
     });
@@ -204,7 +205,13 @@
         $("#remain").html("残り時間："+period);
         
     }
-    
+
+    //ButtonDがクリックされた時の処理
+    function btnDClick(e){
+        active=false;
+        $("body").css("background-color","skyblue");
+        
+    }
  
     // 繰り返し実行する処理
     function timer(){  
@@ -235,8 +242,8 @@
     <button id="btnA">Start / ReStart</button>  
     <button id="btnB">Stop</button>  
     <button id="btnC">SetTime</button>
-    <button id="btnD">色変更</button>  
+    <button id="btnD"> 背景色変更</button>  
     <input type="number" id="minute" value=0 >
-    <input type="number" id="second" value=15>
+    <input type="number" id="second" value=180>
 </body>
 </html>
